@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PostgreSQL.ApplicationInsights.ConsoleApp": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      }
+    }
+  }
+}
