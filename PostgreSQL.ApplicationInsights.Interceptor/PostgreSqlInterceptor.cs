@@ -28,7 +28,7 @@ namespace PostgreSQL.ApplicationInsights.Interceptor
         public InterceptionResult<DbCommand> CommandCreating(CommandCorrelatedEventData eventData,
             InterceptionResult<DbCommand> result)
         {
-            TrackEvent(nameof(CommandCreated), eventData.Connection, eventData.ConnectionId, eventData.StartTime);
+            TrackEvent(nameof(CommandCreating), eventData.Connection, eventData.ConnectionId, eventData.StartTime);
 
             return result;
         }
